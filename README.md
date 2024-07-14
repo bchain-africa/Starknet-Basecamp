@@ -1,5 +1,5 @@
 # Pre-Requisites For Cairo Development on Starknet
-## Rust
+### Rust
 ## Starknet Devnet
 ## Starknet Foundry
 ## Scarb
