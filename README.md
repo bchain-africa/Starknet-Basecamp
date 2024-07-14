@@ -12,7 +12,7 @@
 
 -Install Starknet Foundry . Visit this link https://foundry-rs.github.io/starknet-foundry/getting-started/installation.html
 
--Install Scarb . Go to this link : https://docs.swmansion.com/scarb/ 
-  scarb installation comes bundled with cairo. It's successful installation has cairo running
+-Install Scarb . Go to this link : https://docs.swmansion.com/scarb/ .
+  Scarb installation comes bundled with cairo. It's successful installation has cairo running
   
 -Set up vs code
