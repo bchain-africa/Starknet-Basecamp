@@ -1,9 +1,9 @@
 # Pre-Requisites For Cairo Development on Starknet
-##Rust
--Starknet Devnet
--Starknet Foundry
--Scarb
--VScode
+## Rust
+## Starknet Devnet
+## Starknet Foundry
+## Scarb
+## VScode
 
 # Step by Step Installation Guide
 -Install Rust and Cargo. Go to https://doc.rust-lang.org/book/ch01-01-installation.html
