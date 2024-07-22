@@ -1,39 +1,33 @@
-//Simple calculator program
+// Basic arithmetic calculator
 
 fn main() {
+    let sum = calculate(15, 5, Operation::Add);
+    println!("Addition result: {}", sum);
 
-    let addition_result =  add(10,10);
-    println!("The result of the addition operation is:{}", addition_result);
+    let difference = calculate(20, 7, Operation::Subtract);
+    println!("Subtraction result: {}", difference);
 
-    let subtraction_result =  subtract(10, 10);
-    println!("The result of the subtraction operation is:{}", subtraction_result);
+    let product = calculate(6, 4, Operation::Multiply);
+    println!("Multiplication result: {}", product);
 
-    let multiplication_result = multiply(2, 2);
-    println!("The result of the multiplication operation is:{}", multiplication_result);
-
-    let division_result = division(10, 2);
-    println!("The result from the division operations is:{}", division_result);
-
+    let quotient = calculate(50, 5, Operation::Divide);
+    println!("Division result: {}", quotient);
 }
 
-//Basic arithemetic operations 
-//addition
-fn add(x:u16, y:u16) ->u16{
-    x + y
+// Enum to represent arithmetic operations
+enum Operation {
+    Add,
+    Subtract,
+    Multiply,
+    Divide,
 }
 
-//Subtraction
-fn subtract(x:u16, y:u16) ->u16 {
-    x - y
-}
-
-//multiplication
-fn multiply(x:u16, y:u16) ->u16 {
-    x * y
-}
-
-//division
-
-fn division(x:u16, y:u16) ->u16 {
-    x / y
+// Function to perform arithmetic operations
+fn calculate(a: u16, b: u16, op: Operation) -> u16 {
+    match op {
+        Operation::Add => a + b,
+        Operation::Subtract => a - b,
+        Operation::Multiply => a * b,
+        Operation::Divide => a / b,
+    }
 }
